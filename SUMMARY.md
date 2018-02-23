@@ -11,7 +11,7 @@
     * [2.1 LoRaWAN Classes](eBook/2 Introduction on LoRaWAN options.md#2.1)
     * [2.2 文档范围](eBook/2 Introduction on LoRaWAN options.md#2.2)
 
-* [CLASS A - ALL END-DEVICE 所有终端]()
+* [CLASS A - ALL END-DEVICE 所有终端](eBook/CLASS A - ALL END-DEVICE.md)
 
 * [第3章 PHY 帧格式](eBook/3 Physical Message Formats.md)
     * [3.1 上行消息](eBook/3 Physical Message Formats.md#3.1)
