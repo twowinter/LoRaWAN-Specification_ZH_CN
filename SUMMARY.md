@@ -8,8 +8,8 @@
     * [1.2 文档约定](eBook/1 Introduction.md#1.2)
 
 * [第2章 LoRaWAN Classes 类型介绍](eBook/2 Introduction on LoRaWAN options.md)
-    * [2.1 LoRaWAN Classes](eBook/2 Introduction on LoRaWAN options.md#2.1 LoRaWAN Classes)
-    * [2.2 文档范围](eBook/2 Introduction on LoRaWAN options.md#2.2 文档范围)
+    * [2.1 LoRaWAN Classes](eBook/2 Introduction on LoRaWAN options.md#2.1)
+    * [2.2 文档范围](eBook/2 Introduction on LoRaWAN options.md#2.2)
 
 * [CLASS A - ALL END-DEVICE 所有终端]()
 
