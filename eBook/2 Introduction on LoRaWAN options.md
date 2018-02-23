@@ -5,7 +5,7 @@
 
 LoRa 是由Semtech面向长距离、低功耗、低速率应用而开发的无线调制技术。本文档中，将 Class A 基础上实现了更多功能的设备称为“更高 class 终端”。
 
-## [2.1 LoRaWAN Classes](id:2.1)
+## <a name="2.1">2.1 LoRaWAN Classes</a>
 
 LoRa网络包含基础LoRaWAN（称之为Class A）和可选功能（Class B，Class C）:
 
@@ -19,7 +19,7 @@ LoRa网络包含基础LoRaWAN（称之为Class A）和可选功能（Class B，C
 - **最大化接收时隙的双向传输终端(Class C)：** Class C 的终端基本是一直打开着接收窗口，只在发送时短暂关闭。Class C 的终端会比 Class A 和 Class B
 更加耗电，但同时从服务器下发给终端的时延也是最短的。
 
-## [2.2 文档范围](id:2.2)
+## <a name="2.2">2.2 文档范围</a>
 
 这份LoRaWAN协议还描述了与 Class A 不同的其他 Class 的额外功能。更高 Class 的终端必须满足 Class A 定义的所有功能。
 
