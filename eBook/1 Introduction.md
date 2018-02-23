@@ -1,17 +1,5 @@
 
 
-## 前言
-
-这是《LoRaWAN102》的译文，即LoRaWAN协议规范 V1.0.2 版本( 2016 年 7 月定稿)。
-
-我正在陆续对协议的各个章节进行翻译，具体其他章节的译文，以及译文之外的代码解析，可点此查看帖子[LoRa学习笔记_汇总](http://blog.csdn.net/iotisan/article/details/53930458)。
-
-> 本文作者twowinter，转载请注明作者：[http://blog.csdn.net/iotisan/](http://blog.csdn.net/iotisan/)
-
----
-
-## 翻译开始
-
 **第1章 介绍**
 
 本文档描述了LoRaWAN网络协议，是针对电池供电的终端设备(不管移动还是固定位置)进行优化的一套网络协议。
@@ -45,11 +33,3 @@ MAC命令的格式写作 ***LinkCheckReq*** (粗斜体)，位和位域的格式�
 - EUI 是8字节字段，采用小端模式传输
 - 默认所有RFU保留位都设为0
 
-
-
-## 翻译完
-
-
----
-
-![](http://7xkqvo.com1.z0.glb.clouddn.com/wechat_mp_qrcode_new.png)
