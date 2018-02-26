@@ -40,6 +40,7 @@ PHDR，PHDR_CRC 及载荷 CRC 域都通过射频收发器加入。
       <td>PHYPayload</td>
    </tr>
 </table>
+
 图3.下行PHY帧格式
 
 
@@ -48,6 +49,7 @@ PHDR，PHDR_CRC 及载荷 CRC 域都通过射频收发器加入。
 每个上行传输后终端都要开两个短的接收窗口。接收窗口开始时间的规定，是以传输结束时间为参考。
 
 ![](http://7xkqvo.com1.z0.glb.clouddn.com/lorawan_ed_receive_slot_timing.png)
+
 图4.终端接收时隙的时序图
 
 ### <a name="3.3.1">3.3.1 第一接收窗口的信道，数据速率和启动</a>
