@@ -23,8 +23,8 @@ PHDR，PHDR_CRC 及载荷 CRC 域都通过射频收发器加入。
       <td>CRC</td>
    </tr>
 </table>
-图2.上行PHY帧格式
 
+图2.上行PHY帧格式  
 
 ### <a name="3.2">3.2 下行消息</a>
 

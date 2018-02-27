@@ -65,7 +65,9 @@ FHDR：
       <td>FOpts</td>
    </tr>
 </table>
+
 图8.帧头结构
+
 
 图9.LoRa帧格式元素(即图5~8)  
 
@@ -107,6 +109,7 @@ MACPayload字段的最大长度M，在第6章有详细说明。
 MAC头中指定了消息类型(MType)和帧编码所遵循的LoRaWAN规范的主版本号(Major)。
 
 #### <a name="4.2.1">4.2.1 消息类型(MType位字段)</a>
+
 LoRaWAN定义了六个不同的MAC消息类型：join request, join accept, unconfirmed data up/down, 以及 confirmed data up/down 。
 
 <table>
@@ -147,6 +150,7 @@ LoRaWAN定义了六个不同的MAC消息类型：join request, join accept, unco
       <td>Proprietary</td>
    </tr>
 </table>
+
 表1.MAC消息类型
 
 
@@ -180,6 +184,7 @@ Proprietary messages 用来处理非标准的消息格式，不能和标准消�
       <td>RFU</td>
    </tr>
 </table>
+
 表2.Major列表
 
 > 注意：Major定义了激活过程中(join procedure)使用的消息格式（见章节6.2）和MAC Payload的前4字节（见第4章）。终端要根据不同的主版本号实现不同最小版本的消息格式。终端使用的最小版本应当提前通知网络服务器。
@@ -191,6 +196,7 @@ MAC载荷，也就是所谓的“数据帧”，包含：帧头（FHDR）、端�
 
 
 #### <a name="4.3.1">4.3.1 帧头(FHDR)</a>
+
 FHDR是由终端短地址(DevAddr)、1字节帧控制字节(FCtrl)、2字节帧计数器(FCnt)和用来传输MAC命令的帧选项(FOpts，最多15个字节)组成。
 
 <table>
