@@ -1,7 +1,7 @@
 
-# Contents
+# Summary
 
-## [前言](README.md)
+* [前言](README.md)
 
 * [第1章 介绍](eBook/1 Introduction.md)
     * [1.1 LoRaWAN Classes](eBook/1 Introduction.md#1.1)
@@ -11,7 +11,8 @@
     * [2.1 LoRaWAN Classes](eBook/2 Introduction on LoRaWAN options.md#2.1)
     * [2.2 文档范围](eBook/2 Introduction on LoRaWAN options.md#2.2)
 
-## [CLASS A - ALL END-DEVICE 所有终端](eBook/CLASS A - ALL END-DEVICE.md)
+### CLASS A - ALL END-DEVICE 所有终端
+* [CLASS A - ALL END-DEVICE 所有终端](eBook/CLASS A - ALL END-DEVICE.md)
 
 * [第3章 PHY 帧格式](eBook/3 Physical Message Formats.md)
     * [3.1 上行消息](eBook/3 Physical Message Formats.md#3.1)
@@ -54,9 +55,3 @@
         * [6.2.4 Join-request 消息](eBook/6 End-Device Activation.md#6.2.4)
         * [6.2.5 Join-accept 消息](eBook/6 End-Device Activation.md#6.2.5)
     * [6.3 独立激活 ABP](eBook/6 End-Device Activation.md#6.3)
-	
-
-	
-	
-	
-	
