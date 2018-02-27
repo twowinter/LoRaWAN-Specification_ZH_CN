@@ -1,7 +1,7 @@
 
 
 
-# **第4章 MAC帧格式**
+## **第4章 MAC帧格式**
 
 LoRa所有上下行链路消息都会携带PHY载荷，PHY载荷以1字节MAC头(MHDR)开始，紧接着MAC载荷(MACPayload)，最后是4字节的MAC校验码(MIC)。
 
@@ -69,7 +69,7 @@ FHDR：
 
 图9.LoRa帧格式元素(即图5~8)
 
-## <a name="4.1">4.1 MAC层(PHYPayload)</a>
+### <a name="4.1">4.1 MAC层(PHYPayload)</a>
 <table>
    <tr>
       <td><b>Size (bytes)</b></td>   
@@ -87,7 +87,7 @@ FHDR：
 
 MACPayload字段的最大长度M，在第6章有详细说明。
 
-## <a name="4.2">4.2 MAC头(MHDR字段)</a>
+### <a name="4.2">4.2 MAC头(MHDR字段)</a>
 <table>
    <tr>
       <td><b>Bit#</b></td>   
@@ -105,7 +105,7 @@ MACPayload字段的最大长度M，在第6章有详细说明。
 
 MAC头中指定了消息类型(MType)和帧编码所遵循的LoRaWAN规范的主版本号(Major)。
 
-### <a name="4.2.1">4.2.1 消息类型(MType位字段)</a>
+#### <a name="4.2.1">4.2.1 消息类型(MType位字段)</a>
 LoRaWAN定义了六个不同的MAC消息类型：join request, join accept, unconfirmed data up/down, 以及 confirmed data up/down 。
 
 <table>
@@ -162,7 +162,7 @@ Proprietary messages 用来处理非标准的消息格式，不能和标准消�
 
 不同消息类型用不同的方法保证消息一致性，下面会介绍每种消息类型的具体情况。
 
-### <a name="4.2.2">4.2.2 数据消息的主版本(Major位字段)</a>
+#### <a name="4.2.2">4.2.2 数据消息的主版本(Major位字段)</a>
 
 <table>
    <tr>
@@ -182,11 +182,11 @@ Proprietary messages 用来处理非标准的消息格式，不能和标准消�
 
 > 注意：Major定义了激活过程中(join procedure)使用的消息格式（见章节6.2）和MAC Payload的前4字节（见第4章）。终端要根据不同的主版本号实现不同最小版本的消息格式。终端使用的最小版本应当提前通知网络服务器。
 
-## <a name="4.3">4.3 MAC载荷(MACPayload)</a>
+### <a name="4.3">4.3 MAC载荷(MACPayload)</a>
 
 MAC载荷，也就是所谓的“数据帧”，包含：帧头（FHDR）、端口（FPort）以及帧载荷(FRMPayload），其中端口和帧载荷是可选的。
 
-### <a name="4.3.1">4.3.1 帧头(FHDR)</a>
+#### <a name="4.3.1">4.3.1 帧头(FHDR)</a>
 FHDR是由终端短地址(DevAddr)、1字节帧控制字节(FCtrl)、2字节帧计数器(FCnt)和用来传输MAC命令的帧选项(FOpts，最多15个字节)组成。
 
 <table>
@@ -308,7 +308,7 @@ FOpts字段存放MAC命令，最长15字节，详细的MAC命令见章节4.4。
 MAC命令不能同时出现在FRMPayload和FOpts中，如果出现了，设备丢掉该组数据。
 
 
-### <a name="4.3.2">4.3.2 端口字段(FPort)</a>
+#### <a name="4.3.2">4.3.2 端口字段(FPort)</a>
 
 如果帧载荷字段不为空，端口字段必须体现出来。端口字段有体现时，若FPort的值为0表示FRMPayload只包含了MAC命令；具体见章节4.4中的MAC命令。  FPort的数值从1到223(0x01..0xDF)都是由应用层使用。  FPort的值从224到255(0xE0..0xFF)是保留用做未来的标准应用拓展。
 
@@ -333,7 +333,7 @@ N应该小于等于：
 N <= M - 1 - (FHDR长度)
 M是MAC载荷的最大长度。
 
-### <a name="4.3.3">4.3.3 MAC帧载荷加密(FRMPayload)</a>
+#### <a name="4.3.3">4.3.3 MAC帧载荷加密(FRMPayload)</a>
 如果数据帧携带了载荷，FRMPayload必须要在MIC计算前进行加密。
 加密机制是采用IEEE802.15.4/2006的AES128算法。
 
@@ -404,6 +404,7 @@ MIC是按照[RFC4493]来计算：
 > MIC = cmac[0..3]
 
 块B0的定义如下：
+
 <table>
    <tr>
       <td><b>Size(bytes)</b></td>   
@@ -426,5 +427,6 @@ MIC是按照[RFC4493]来计算：
 	  <td>len(msg)</td>
    </tr>
 </table>
+
 方向字段(**Dir**)在上行帧时为0，在下行帧时为1。
 
