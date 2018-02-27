@@ -32,6 +32,7 @@
 它的高7位是NwkId，用来区别同一区域内的不同网络，另外也保证防止节点窜到别的网络去。它的低25位是NwkAddr，是终端的网络地址，可以由网络管理者来分配。
 
 - 6.1.2 应用ID(AppEUI)
+
 AppEUI是一个类似IEEE EUI64的全球唯一ID，标识终端的应用提供者。
 APPEUI在激活流程开始前就存储在终端中。
 
@@ -56,12 +57,15 @@ APPEUI在上面的6.1.2已经做了描述。
 DevEUI 是一个类似IEEE EUI64的全球唯一ID，标识唯一的终端设备。
 
 - <a name="6.2.2">6.2.2 应用密钥(AppKey)</a>  
+
 AppKey 是由应用程序拥有者分配给终端，很可能是由应用程序指定的根密钥来衍生的，并且受提供者控制。当终端通过空中激活方式加入网络，AppKey用来产生会话密钥NwkSKey和AppSKey，会话密钥分别用来加密和校验网络层和应用层数据。
 
 - <a name="6.2.3">6.2.3 加网流程</a>
+
 从终端角度看，加网流程是由和服务器的两个MAC命令交互组成的，分别是 join request 和 join accept。
 
 - <a name="6.2.4">6.2.4 Join-request 消息</a>
+
 加网流程总是由终端发送 join-request 来发起。
 
 <table>
@@ -92,10 +96,12 @@ join-request 消息不用加密。
 
 
 - <a name="6.2.5">6.2.5 Join-accept 消息</a>
+
 如果网络服务器准许终端加入网络，就会对 join-request 回复 join-accept 消息
 
 
 ### <a name="6.3">6.3 独立激活 ABP</a>
+
 在某些情况下，终端可以独立激活。独立激活是让终端绕过 join request - join accept的加网流程，直接加入到指定网络中。
 
 独立激活终端，意味着 DevAddr 和两个会话密钥 NwkSKey 和 AppSKey 直接存储在终端中，而不是DevEUI，AppEUI，AppKey。终端在一开始就配置好了入网必要的信息。

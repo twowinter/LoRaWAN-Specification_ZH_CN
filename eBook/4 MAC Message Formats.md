@@ -67,7 +67,8 @@ FHDR：
 </table>
 图8.帧头结构
 
-图9.LoRa帧格式元素(即图5~8)
+图9.LoRa帧格式元素(即图5~8)  
+
 
 ### <a name="4.1">4.1 MAC层(PHYPayload)</a>
 <table>
@@ -162,6 +163,7 @@ Proprietary messages 用来处理非标准的消息格式，不能和标准消�
 
 不同消息类型用不同的方法保证消息一致性，下面会介绍每种消息类型的具体情况。
 
+
 #### <a name="4.2.2">4.2.2 数据消息的主版本(Major位字段)</a>
 
 <table>
@@ -182,9 +184,11 @@ Proprietary messages 用来处理非标准的消息格式，不能和标准消�
 
 > 注意：Major定义了激活过程中(join procedure)使用的消息格式（见章节6.2）和MAC Payload的前4字节（见第4章）。终端要根据不同的主版本号实现不同最小版本的消息格式。终端使用的最小版本应当提前通知网络服务器。
 
+
 ### <a name="4.3">4.3 MAC载荷(MACPayload)</a>
 
 MAC载荷，也就是所谓的“数据帧”，包含：帧头（FHDR）、端口（FPort）以及帧载荷(FRMPayload），其中端口和帧载荷是可选的。
+
 
 #### <a name="4.3.1">4.3.1 帧头(FHDR)</a>
 FHDR是由终端短地址(DevAddr)、1字节帧控制字节(FCtrl)、2字节帧计数器(FCnt)和用来传输MAC命令的帧选项(FOpts，最多15个字节)组成。
@@ -392,7 +396,8 @@ pld = FRMPayload
 
 通过异或计算对payload进行加解密：
 
-- 4.3.3.2 LoRaWAN层之上的加密
+- 4.3.3.2 LoRaWAN层之上的加密  
+
 如果LoRaWAN之上的层级在已选的端口上(但不能是端口0，这是给MAC命令保留的)提供了预加密的FRMPayload给LoRaWAN，LoRaWAN则不再对FRMPayload进行修改，直接将FRMPayload从MACPayload传到应用层，以及从应用层传到MACPayload。
 
 ## <a name="4.4">4.4 消息校验码(MIC)</a>

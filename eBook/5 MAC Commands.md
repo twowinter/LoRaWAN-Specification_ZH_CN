@@ -131,7 +131,9 @@
 > 注意：MAC命令的长度虽然没有明确给出，但是MAC执行层必须要知道。因此未知的MAC命令无法被忽略，且前面未知的MAC命令会终止MAC命令的处理队列。所以建议按照LoRaWAN协议介绍的MAC命令来处理MAC命令。这样所有基于LoRaWAN协议的MAC命令都可以被处理，即使是更高版本的命令。
 
 ---
+
 ### <a name="5.1">5.1 Link Check 命令 (LinkCheckReq, LinkCheckAns)</a>
+
 
 ### <a name="5.2">5.2 Link ADR 命令(LinkADRReq, LinkADRAns)</a>
 
@@ -273,7 +275,9 @@ LinkADRAns 的 Status 位域按照如下定义：
 
 如果这三个位中有任何一位等于0，则命令没有成功，节点保持之前的状态。
 
+
 ### <a name="5.3">5.3 终端发射占空比(DutyCycleReq, DutyCycleAns)</a>
+
 
 ### <a name="5.4">5.4 接收窗口参数(RXParamSetupReq,RXParamSetupAns)</a>
 
@@ -315,10 +319,14 @@ LinkADRAns 的 Status 位域按照如下定义：
 
 ### <a name="5.6">5.6 信道的创建和修改(NewChannelReq, NewChannelAns, DlChannelReq, DlChannelAns)</a>
 
+
 ### <a name="5.7">5.7 TX 和 RX 之间的延时设置(RXTimingSetupReq, RXTimingSetupAns)</a>
+
 
 ### <a name="5.8">5.8 终端发送参数(TxParamSetupReq, TxParamSetupAns)</a>
 
+
 ---
+
 未完待续。
 

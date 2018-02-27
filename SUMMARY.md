@@ -59,7 +59,7 @@
 
 * [第8章 Class B 介绍](eBook/8 Introduction to Class B.md)
 
-* [第9章 下行同步网络的原理](eBook/9 Principle of synchronous network initiated downlink (Class-B option).md)
+* [第9章 下行同步网络的原理](eBook/9 Principle of synchronous network initiated downlink.md)
 
 * [第10章 Class B 模式的上行帧](eBook/10 Uplink frame in Class B mode.md)
 
