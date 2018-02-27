@@ -11,7 +11,6 @@
     * [2.1 LoRaWAN Classes](eBook/2 Introduction on LoRaWAN options.md#2.1)
     * [2.2 文档范围](eBook/2 Introduction on LoRaWAN options.md#2.2)
 
-### CLASS A - ALL END-DEVICE 所有终端
 * [CLASS A - ALL END-DEVICE 所有终端](eBook/CLASS A - ALL END-DEVICE.md)
 
 * [第3章 PHY 帧格式](eBook/3 Physical Message Formats.md)
@@ -55,3 +54,17 @@
         * [6.2.4 Join-request 消息](eBook/6 End-Device Activation.md#6.2.4)
         * [6.2.5 Join-accept 消息](eBook/6 End-Device Activation.md#6.2.5)
     * [6.3 独立激活 ABP](eBook/6 End-Device Activation.md#6.3)
+
+* [CLASS B – BEACON 信标](eBook/CLASS B - BEACON.md)
+
+* [第8章 Class B 介绍](eBook/8 Introduction to Class B.md)
+
+* [第9章 下行同步网络的原理](eBook/9 Principle of synchronous network initiated downlink (Class-B option).md)
+
+* [第10章 Class B 模式的上行帧](eBook/10 Uplink frame in Class B mode.md)
+
+* [CLASS C - CONTINUOUSLY LISTENING 持续接收](eBook/CLASS C – CONTINUOUSLY LISTENING.md)
+
+* [第17章 持续接收的终端](eBook/17 Class C Continuously listening end-device.md)
+    * [17.1 Class C 的第二接收窗口持续时间](eBook/17 Class C Continuously listening end-device.md#17.1)
+    * [17.2 Class C 对多播下行的处理](eBook/17 Class C Continuously listening end-device.md#17.2)
