@@ -9,7 +9,7 @@ LoRa 是由Semtech面向长距离、低功耗、低速率应用而开发的无�
 
 LoRa网络包含基础LoRaWAN（称之为Class A）和可选功能（Class B，Class C）:
 
-![](http://7xkqvo.com1.z0.glb.clouddn.com/lorawan_classes.png)
+![](Pictures/lorawan_classes.png)
 图1.LoRaWAN Classes
 
 - **双向传输终端(Class A)：** Class A 的终端在每次上行后都会紧跟两个短暂的下行接收窗口，以此实现双向传输。传输时隙是由终端在有传输需要时安排，附加一定的随机延时(即ALOHA协议)。这种Class A 操作是最省电的，要求应用在终端上行传输后的很短时间内进行服务器的下行传输。服务器在其他任何时间进行的下行传输都得等终端的下一次上行。

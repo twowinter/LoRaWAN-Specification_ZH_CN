@@ -14,7 +14,7 @@ Class C 终端会尽可能地使用 RX2 窗口来监听。按照 Class A 的规�
 
 Class C 设备执行和 Class A 一样的两个接收窗口，但它们没有关闭 RX2 ，除非他们需要再次发送数据。因此它们几乎可以在任意时间用 RX2 来接收下行消息，包括MAC命令和ACK传输的下行消息。另外在发送结束和 RX1 开启之间还打开了一个短暂的RX2窗口。
 
-![](http://7xkqvo.com1.z0.glb.clouddn.com/lorawan_ClassCed_reception_slot_timing.png)
+![](Pictures/lorawan_ClassCed_reception_slot_timing.png)
 
 图13.Class C 终端的接收时隙时序图
 

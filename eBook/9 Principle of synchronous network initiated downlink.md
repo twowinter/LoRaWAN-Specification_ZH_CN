@@ -18,6 +18,6 @@
 
 下面这张图展示了beacon接收时隙和ping时隙。
 
-![](http://7xkqvo.com1.z0.glb.clouddn.com/lorawan_classb_rx_ping_slot_timing.png)
+![](Pictures/lorawan_classb_rx_ping_slot_timing.png)
 
 在这个示例中，指定beacon周期是128秒，ping接收时隙的周期是32秒。大部分时候server并没有使用ping时隙，因此终端可以在接入信道时监听下是否有前导码，如果没有则立即关闭接收窗口。如果监测到前导码，则射频会持续接收，直到下行帧解调完毕。MAC层随后处理数据帧，检查确认地址域匹配和MIC校验有效之后再转发给应用层。
