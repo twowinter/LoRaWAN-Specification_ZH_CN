@@ -26,27 +26,27 @@
 <table>
    <tr>
       <td><b>DevAddr</b></td>
-      <td>设备32位网络单播或者广播地址</td>
+      <td>设备32位网络单播或者广播地址 </td>
    </tr>
    <tr>
       <td>pingNb</td>
-      <td>每个信标周期的ping时隙号。必须为2的整数幂:pingNb = 2^k,1<=k<=7</td>
+      <td>每个信标周期的ping时隙号。必须为2的整数幂:pingNb = 2^k,1<=k<=7 </td>
    </tr>
    <tr>
       <td>pingPeriod</td>
-      <td>以时隙号表示的设备接收窗口周期:pingPeriod=2^12/pingNb</td>
+      <td>以时隙号表示的设备接收窗口周期:pingPeriod=2^12/pingNb </td>
    </tr>
    <tr>
       <td>pingOffset</td>
-      <td>在每个信标周期开始计算的随机偏移。值的范围为0到(pingPeriod-1)</td>
+      <td>在每个信标周期开始计算的随机偏移。值的范围为0到(pingPeriod-1) </td>
    </tr>
    <tr>
       <td>beaconTime</td>
-      <td>这个时间将会在<b>BCNPayload</b>中携带。前一个信标帧的时间</td>
+      <td>这个时间将会在<b>BCNPayload</b>中携带。前一个信标帧的时间 </td>
    </tr>
    <tr>
       <td>slotLen</td>
-      <td>一个单元ping时隙长度=30ms(就是前面所说的将ping时隙划分的时间段长度，4096段)</td>
+      <td>一个单元ping时隙长度=30ms(就是前面所说的将ping时隙划分的时间段长度，4096段) </td>
    </tr>
 </table>
 
@@ -66,7 +66,7 @@
 <table>
    <tr>
       <td>First slot</td>
-      <td>Beacon_reserved + pingOffsetx slotLen</td>
+      <td>Beacon_reserved + pingOffset x slotLen</td>
    </tr>
    <tr>
       <td>Slot 2</td>

@@ -8,7 +8,7 @@
 
 默认的，Class B的下行使用最后一个信标(鉴信标帧格式内容)的**Time**字段的信道函数和**DevAddr**。
 
-                 Class B downlink channel = [DevAddr + floor(Beacon_Time/BEacon_period)] modulo 8
+                 Class B downlink channel = [DevAddr + floor(Beacon_Time/Beacon_period)] modulo 8
 
 - 其中Beacon_Time是当前信标周期的32位**Time**字段。
 

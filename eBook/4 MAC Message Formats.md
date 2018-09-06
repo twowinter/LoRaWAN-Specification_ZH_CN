@@ -294,6 +294,7 @@ LoRa网络允许终端采用任何可能的数据速率。LoRaWAN协议利用该
 
 - 4.3.1.4 帧挂起位(FPending in FCtrl 只在下行有效)
 
+
 帧挂起位(FPending)只在下行交互中使用，表示网关还有挂起数据等待下发，需要终端尽快发送上行消息来再打开一个接收窗口。
 
 **FPending**的详细用法在章节18.3。
@@ -347,7 +348,7 @@ M是MAC载荷的最大长度。
 如果数据帧携带了载荷，FRMPayload必须要在MIC计算前进行加密。
 加密机制是采用IEEE802.15.4/2006的AES128算法。
 
-默认的，加密和加密由LoRaWAN层来给所有的FPort来执行。如果加密/解密由应用层来做更方便的话，也可以在LoRaWAN层之上给特定FPorts来执行，除了端口0。具体哪个节点的哪个FPort在LoRaWAN层之外要做加解密，必须要和服务器通过out-of-band信道来交互(见第19章)。
+默认的，加密和解密由LoRaWAN层来给所有的FPort来执行。如果加密/解密由应用层来做更方便的话，也可以在LoRaWAN层之上给特定FPorts来执行，除了端口0。具体哪个节点的哪个FPort在LoRaWAN层之外要做加解密，必须要和服务器通过out-of-band信道来交互(见第19章)。
 
 - 4.3.3.1 LoRaWAN的加密
 
@@ -367,7 +368,9 @@ M是MAC载荷的最大长度。
       <td>AppSKey</td>
    </tr>
 </table>
+
 表3: FPort列表
+
 
 具体加密是这样：
 pld = FRMPayload

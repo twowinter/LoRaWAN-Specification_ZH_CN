@@ -226,7 +226,7 @@ Frequency字段和Class A协议中定义的**NewChannelReq**MAC命令有着相�
 
 ### <a name="14.4">14.4 BeaconTimingReq</a>
 
-终端使用该命令来请求下一个信标定时以及信道，该MAC命令没有载荷。**BeaconTimingReq** & **BeaconTimingAns**机制仅仅用于加快刚开始的信标搜索以降低终端的能量需求。
+终端使用该命令来请求下一个信标的时间以及信道，该MAC命令没有载荷。**BeaconTimingReq** & **BeaconTimingAns**机制仅仅用于加快刚开始的信标搜索以降低终端的能量需求。
 
 网络在给定的时间周期内可能只应答有限数量的请求。终端不能期望在发出**BeaconTimingReq**命令之后立刻收到**BeaconTimingAns**命令的应答。想要切换到Class B模式的处于Class A模式的终端一小时之内不应该发送超过一个**BeaconTimingReq**命令。
 
