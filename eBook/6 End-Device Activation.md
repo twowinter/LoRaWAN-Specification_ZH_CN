@@ -165,7 +165,7 @@ RX1DRoffset字段设置了终端在第一接收时隙(RX1)通信时上行数据�
 
 上行和下行的数据率之间的实际关系是由区域指定的，在LoRaWAN地区参数文件[PARAM]中进行定义。
 
-延时**RxDelay**和**RXTimingSetupReq **里的**Delay**字段有着相同的约定。
+延时**RxDelay**和**RXTimingSetupReq**里的**Delay**字段有着相同的约定。
 
 ### <a name="6.3">6.3 独立激活 ABP</a>
 

@@ -119,6 +119,34 @@
 	  <td>RXTimingSetupReq的回复。</td>
    </tr>
    <tr>
+      <td>0x09</td>
+      <td>TxParamSetupReq</td>
+      <td></td>
+      <td>x</td>
+	  <td>网络服务器用于设置基于当地规定的终端的最大允许驻留时间和最大EIRP</td>
+   </tr>
+   <tr>
+      <td>0x09</td>
+      <td>TxParamSetupAns</td>
+      <td>x</td>
+      <td></td>
+	  <td>TxParamSetupReq的回复。</td>
+   </tr>
+   <tr>
+      <td>0x0A</td>
+      <td>DlChannelReq</td>
+      <td></td>
+      <td>x</td>
+	  <td>通过从上行链路频率移位下行链路频率（即创建非对称信道）来修改下行链路RX1无线电信道的定义</td>
+   </tr>
+   <tr>
+      <td>0x0A</td>
+      <td>DlChannelAns</td>
+      <td>x</td>
+      <td></td>
+	  <td>DlChannelReq的回复。</td>
+   </tr>
+   <tr>
       <td>0x80~0xFF</td>
       <td>私有</td>
       <td>x</td>
@@ -137,7 +165,7 @@
 
 ### <a name="5.1">5.1 Link Check 命令 (LinkCheckReq, LinkCheckAns)</a>
 
-通过LinkCheckReq命令，终端可以知道是否已连接上服务器。该 命令没有载荷。
+通过LinkCheckReq命令，终端可以知道是否已连接上服务器。该命令没有载荷。
 
 当网络服务器通过一个或者多个网关接收到LinkCheckReq命令时，它会以LinkCheckAns命令进行回复。
 

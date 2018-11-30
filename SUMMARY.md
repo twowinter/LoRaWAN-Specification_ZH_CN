@@ -55,7 +55,7 @@
 * [第13章 Class B下行时隙](eBook/13 Class B Downlink slot timing.md)
     * [13.1 定义](eBook/13 Class B Downlink slot timing.md#13.1)
     * [13.2 时隙随机化](eBook/13 Class B Downlink slot timing.md#13.2)
-* [第14章 Class B Mac命令](eBook/14 Class B MAC commands.md)
+* [第14章 Class B MAC命令](eBook/14 Class B MAC commands.md)
     * [14.1 PingSlotInfoReq MAC命令](eBook/14 Class B MAC commands.md#14.1)
     * [14.2 BeaconFreReq MAC命令](eBook/14 Class B MAC commands.md#14.2)
     * [14.3 PingSlotChannelReq MAC命令](eBook/14 Class B MAC commands.md#14.3)

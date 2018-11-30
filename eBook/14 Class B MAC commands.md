@@ -138,7 +138,7 @@ Frequency字段和Class A协议中定义的**NewChannelReq**MAC命令有着相�
 
 ### <a name="14.3">14.3 PingSlotChannnelReq</a>
 
-该命名由服务器发往终端，用于修改终端期望下行ping的频率。
+该命令由服务器发往终端，用于修改终端期望下行ping的频率。
 
 <table>
    <tr>
