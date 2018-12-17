@@ -97,8 +97,75 @@ join-request 消息不用加密。
 
 - <a name="6.2.5">6.2.5 Join-accept 消息</a>
 
-如果网络服务器准许终端加入网络，就会对 join-request 回复 join-accept 消息
+如果网络服务器准许终端加入网络，就会用 **join-accept** 对 **join-request** 进行应答。**join-accept** 是作为一个普通下行帧进行下发的，唯一的区别是它使用的是 JOIN_ACCEPT_DELAY1 或者 JOIN_ACCEPT_DELAY2 (分别代替 RECEIVE_DELAY1 和 RECEIVE_DELAY2 )但是它所使用的两个接收窗口的信道频率和数据率和 LoRaWAN 地区参数文件[PARAMS]"接收窗口"部分所描述的 RX1 和 RX2 接收窗口相同。
 
+如果 **join-request** 不被接受，则终端不会收到回应。
+
+**join-accept** 消息的帧格式包括3字节的应用随机数(**AppNonce**)，网络标识符(**NetID**)，终端地址(**DevAddr**)，TX和RX之间的延时(**RxDelay**)，用于终端所加入的网络的可选信道频率列表(**CFList**)。**CFList** 的选择是由区域指定的，在 LoRaWAN 地区参数文件[PARAMS]中进行定义。
+
+<table>
+   <tr>
+      <td><b>Size (bytes)</b></td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>(16)Optional</td>
+   </tr>
+   <tr>
+      <td><b>Join Accpet</b></td>
+      <td>AppNonce</td>
+      <td>NetID</td>
+      <td>DevAddr</td>
+      <td>DLSettings</td>
+      <td>RXDelay</td>
+      <td>CFList</td>
+   </tr>
+</table>
+
+**AppNonce**是由网络服务器所提供的一个随机值或者某些形式的唯一ID，用于终端得到两个会话密钥**NwkSKey**和**AppSKey**，如下:
+
+    NwkSKey = aes128_encrypt(AppKey, 0x01 | AppNonce | NetID | DevNonce | pad 16 )
+    AppSKey = aes128_encrypt(AppKey, 0x02 | AppNonce | NetID | DevNonce | pad 16 )
+
+**join-accept**的 MIC 值由如下计算得到:
+
+    cmac = aes128_cmac(AppKey,MHDR | AppNonce | NetID | DevAddr | DLSettings | RxDelay | CFList) 
+    MIC = cmac[0..3]
+
+**join-accept**消息是使用**AppKey**进行加密的，如下:
+
+    aes128_decrypt(AppKey, AppNonce | NetID | DevAddr | DLSettings | RxDelay | CFList | MIC) 
+
+> 注意:网络服务器在 ECB 模式下使用一个 AES 解密操作去对 **join-accept** 消息进行加密，因此终端就可以使用一个 AES 加密操作去对消息进行解密。这样终端只需要去实现 AES 加密而不是 AES 解密。
+
+> 注意:建立这两个会话密钥使得 网络服务器 中的网络运营商无法窃听应用层数据。在这样的设置中，应用提供商必须支持网络运营商处理终端的加网以及为终端生成 NwkSkey。同时应用提供商向网络运营商承诺，它将承担终端所产生的任何流量费用并且保持用于保护应用数据的AppSKey的完全控制权。
+
+**NetID**的格式如下所述:**NetID**的7个最低有效位称为**NwkID**并且和之前所描述的终端的短地址的7个最高有效位相对应。保留的17个最高有效位可以由网络运营商进行自由选择。
+
+**DLsettings**字段包含了下行配置:
+
+<table>
+   <tr>
+      <td><b>Bits</b></td>
+      <td>7</td>
+      <td>6:4</td>
+      <td>3:0</td>
+   </tr>
+   <tr>
+      <td><b>DLsettings</b></td>
+      <td>RFU</td>
+      <td>RX1DRoffset</td>
+      <td>RX2 Data rate</td>
+   </tr>
+</table>
+
+**RX1DRoffset**位域设置上行数据速率和RX1下行数据速率的偏移量。默认情况下偏移量为0（意思就是上行数据速率与下行数据速率相等)。偏移量用于考虑一些地区的基站最大功率密度限制和平衡上下行射频链路预算。
+
+上行和下行的数据率之间的实际关系是由区域指定的，在LoRaWAN地区参数文件[PARAM]中进行定义。
+
+延时**RxDelay**和**RXTimingSetupReq**里的**Delay**字段有着相同的约定。
 
 ### <a name="6.3">6.3 独立激活 ABP</a>
 
