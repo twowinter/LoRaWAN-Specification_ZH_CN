@@ -1,4 +1,3 @@
-
 # Summary
 
 * [前言](README.md)
@@ -23,18 +22,18 @@
         * [3.3.4 接收方在接收窗口期间的处理](eBook/3 Physical Message Formats.md#3.3.4)
         * [3.3.5 网络发送消息给终端](eBook/3 Physical Message Formats.md#3.3.5)
         * [3.3.6 接收窗口的重要事项](eBook/3 Physical Message Formats.md#3.3.6)
-		
+
 * [第4章 MAC帧格式](eBook/4 MAC Message Formats.md)
     * [4.1 MAC层](eBook/4 MAC Message Formats.md#4.1)
     * [4.2 MAC头(MHDR字段)](eBook/4 MAC Message Formats.md#4.2)
         * [4.2.1 第一接收窗口的信道，数据速率和启动](eBook/4 MAC Message Formats.md#4.2.1)
-        * [4.2.2 数据消息的主版本(Major位字段)](eBook/4 MAC Message Formats.md#4.2.2)		
+        * [4.2.2 数据消息的主版本(Major位字段)](eBook/4 MAC Message Formats.md#4.2.2)
     * [4.3 MAC载荷(MACPayload)](eBook/4 MAC Message Formats.md#4.3)
         * [4.3.1 帧头(FHDR)](eBook/4 MAC Message Formats.md#4.3.1)
         * [4.3.2 端口字段(FPort)](eBook/4 MAC Message Formats.md#4.3.2)
         * [4.3.3 MAC帧载荷加密(FRMPayload)](eBook/4 MAC Message Formats.md#4.3.3)
     * [4.4 消息校验码(MIC)](eBook/4 MAC Message Formats.md#4.4)
-	
+
 * [第5章 MAC命令](eBook/5 MAC Commands.md)
     * [5.1 Link Check 命令 (LinkCheckReq, LinkCheckAns)](eBook/5 MAC Commands.md#5.1)
     * [5.2 Link ADR 命令(LinkADRReq, LinkADRAns)](eBook/5 MAC Commands.md#5.2)
@@ -43,8 +42,8 @@
     * [5.5 终端状态(DevStatusReq, DevStatusAns)](eBook/5 MAC Commands.md#5.5)
     * [5.6 信道的创建和修改(NewChannelReq, NewChannelAns, DlChannelReq, DlChannelAns)](eBook/5 MAC Commands.md#5.6)
     * [5.7 TX 和 RX 之间的延时设置(RXTimingSetupReq, RXTimingSetupAns)](eBook/5 MAC Commands.md#5.7)
-    * [5.8 终端发送参数(TxParamSetupReq, TxParamSetupAns)](eBook/5 MAC Commands.md#5.8)	
-	
+    * [5.8 终端发送参数(TxParamSetupReq, TxParamSetupAns)](eBook/5 MAC Commands.md#5.8)
+
 * [第6章 终端激活](eBook/6 End-Device Activation.md)
     * [6.1 终端激活后的数据存储](eBook/6 End-Device Activation.md#6.1)
     * [6.2 空中激活 OTAA](eBook/6 End-Device Activation.md#6.2)
@@ -63,8 +62,34 @@
 
 * [第10章 Class B 模式的上行帧](eBook/10 Uplink frame in Class B mode.md)
 
-* [CLASS C - CONTINUOUSLY LISTENING 持续接收](eBook/CLASS C – CONTINUOUSLY LISTENING.md)
+* [第11章 Class B 模式的下行帧(Class B选项)](eBook/11 Downlink Ping frame format.md)
 
+* [第12章 信标的获得和追踪](eBook/12 Beacon acquisition and tracking.md)
+
+* [第13章 Class B下行时隙时序](eBook/13 Class B Downlink slot timing.md)
+    * [13.1 定义](eBook/13 Class B Downlink slot timing.md#13.1)
+    * [13.2 时隙随机化](eBook/13 Class B Downlink slot timing.md#13.2)
+
+* [第14章 Class B MAC命令](eBook/14 Class B MAC commands.md)
+    * [14.1 PingSlotInfoReq MAC命令](eBook/14 Class B MAC commands.md#14.1)
+    * [14.2 BeaconFreReq MAC命令](eBook/14 Class B MAC commands.md#14.2)
+    * [14.3 PingSlotChannelReq MAC命令](eBook/14 Class B MAC commands.md#14.3)
+    * [14.4 BeaconTimingReq MAC命令](eBook/14 Class B MAC commands.md#14.4)
+    * [14.5 BeaconTimingAns MAC命令](eBook/14 Class B MAC commands.md#14.5)
+
+* [第15章 信标(Class B选项)](eBook/15 Beaconing[Class B option].md)
+    * [15.1 信标物理层](eBook/15 Beaconing[Class B option].md#15.1)
+    * [15.2 信标物理帧格式](eBook/15 Beaconing[Class B option].md#15.2)
+    * [15.3 信标 GwSpecific 域格式](eBook/15 Beaconing[Class B option].md#15.3)
+    * [15.4 信标准确的时隙](eBook/15 Beaconing[Class B option].md#15.4)
+    * [15.5 网络下行链路路由更新要求](eBook/15 Beaconing[Class B option].md#15.5)
+
+* [第16章 Class B单播/多播下行信道频率](eBook/16 Class B unicast & multicast downlink channel frequencies.md)
+    * [16.1 欧盟 863-870MHz ISM 频段](eBook/16 Class B unicast & multicast downlink channel frequencies.md#16.1)
+    * [16.2 美国 902-928MHz ISM 频段](eBook/16 Class B unicast & multicast downlink channel frequencies.md#16.2)
+
+* [CLASS C - CONTINUOUSLY LISTENING 持续接收](eBook/CLASS C – CONTINUOUSLY LISTENING.md)
 * [第17章 持续接收的终端](eBook/17 Class C Continuously listening end-device.md)
     * [17.1 Class C 的第二接收窗口持续时间](eBook/17 Class C Continuously listening end-device.md#17.1)
     * [17.2 Class C 对多播下行的处理](eBook/17 Class C Continuously listening end-device.md#17.2)
+

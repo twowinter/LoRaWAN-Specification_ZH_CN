@@ -14,7 +14,7 @@
 
 每个使用时隙号**N**的终端必须在 **Beacon start** 开始之后的 **Ton** 秒打开它的接收窗口，**Ton**的计算公式如下:
 
-    Ton = beacon_reserved + N * 30ms
+                            Ton = beacon_reserved + N * 30ms
 
 **N** 称为时隙编号。
 
@@ -55,13 +55,13 @@
 
 在每个信标周期终端和服务器都会计算出一个新的伪随机偏移将接收时隙对齐。使用全零的固定密钥的AES加密去进行随机化：
 
-    Key = 16 x 0x00
-    Rand = aes128_encrypt(Key,beaconTime | DevAddr | pad16)
-    pingOffset = (Rand[0] + Rand[1]x256) modulo pingPeriod
+                            Key = 16 x 0x00
+                            Rand = aes128_encrypt(Key,beaconTime | DevAddr | pad16)
+                            pingOffset = (Rand[0] + Rand[1]x256) modulo pingPeriod
 
 信标周期所使用的时隙是:
 
-    pingOffset + N x pingPeriod with N = [0:pingNb-1]
+                            pingOffset + N x pingPeriod with N = [0:pingNb-1]
 
 因此节点打开接收时隙的时间是:
 
