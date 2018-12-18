@@ -10,16 +10,16 @@ Class B 模式的上行帧和 Class A 的基本一样，除了帧头Fctrl字段�
       <td>7</td>
       <td>6</td>
       <td>5</td>
-	  <td>4</td>
-	  <td>[3..0]</td>
+      <td>4</td>
+      <td>[3..0]</td>
    </tr>
    <tr>
       <td><b>FCtrl bits</b></td>   
       <td>ADR</td>
       <td>ADRACKReq</td>
       <td>ACK</td>
-	  <td>Class B</td>
-	  <td>FOptsLen</td>
+      <td>Class B</td>
+      <td>FOptsLen</td>
    </tr>
 </table>
 
