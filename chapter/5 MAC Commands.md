@@ -194,14 +194,14 @@
    <tr>
       <td><b>Size (bytes)</b></td>   
       <td>1</td>   
-	  <td>2</td>  
-	  <td>1</td>  
+      <td>2</td>  
+      <td>1</td>  
    </tr>
    <tr>
       <td><b>LinkADRReq Payload</b></td>
       <td>DataRate_TXPower</td>
-	  <td>ChMask</td>
-	  <td>Redundancy</td>
+      <td>ChMask</td>
+      <td>Redundancy</td>
    </tr>
 </table>
 
@@ -209,12 +209,12 @@
    <tr>
       <td><b>Bits</b></td>   
       <td>[7:4]</td>   
-	  <td>[3:0]</td>  
+      <td>[3:0]</td>  
    </tr>
    <tr>
       <td><b>DataRate_TXPower</b></td>
       <td>DataRate</td>
-	  <td>TXPower</td>
+      <td>TXPower</td>
    </tr>
 </table>
 
@@ -251,14 +251,14 @@ ChMask 字段的对应位如果设置为1，则表示对应的信道可以进行
    <tr>
       <td><b>Bits</b></td>   
       <td>7</td>   
-	  <td>[6:4]</td>  
-	  <td>[3:0]</td>  
+      <td>[6:4]</td>  
+      <td>[3:0]</td>  
    </tr>
    <tr>
       <td><b>Redundancy bits</b></td>
       <td>RFU</td>
-	  <td>ChMaskCntl</td>
-	  <td>NbTrans</td>
+      <td>ChMaskCntl</td>
+      <td>NbTrans</td>
    </tr>
 </table>
 
@@ -286,16 +286,16 @@ NS(网络服务器)可能会在单个下行帧中包含多个 LinkAdrReq 命令�
    <tr>
       <td><b>Bits</b></td>   
       <td>[7:3]</td>   
-	  <td>2</td>  
-	  <td>1</td>  
-	  <td>0</td>  
+      <td>2</td>  
+      <td>1</td>  
+      <td>0</td>  
    </tr>
    <tr>
       <td><b>Status bits</b></td>
       <td>RFU</td>
-	  <td>Power ACK</td>
-	  <td>Data rate ACK</td>
-	  <td>Channel mask ACK</td>
+      <td>Power ACK</td>
+      <td>Data rate ACK</td>
+      <td>Channel mask ACK</td>
    </tr>
 </table>
 
@@ -303,24 +303,24 @@ LinkADRAns 的 Status 位域按照如下定义：
 
 <table>
    <tr>
-      <td><b> /b></td>   
+      <td> </td>   
       <td><b>Bit = 0</b></td> 
-	  <td><b>Bit = 1</b></td> 
+      <td><b>Bit = 1</b></td> 
    </tr>
    <tr>
       <td><b>Channel mask ACK</b></td>
       <td>所发的 channel mask 使能了未定义的信道或者禁用了所有信道。命令被丢弃，终端状态不变。</td>
-	  <td>所发的 channel mask 已成功解析，已按照 mask 设置了当前的信道状态。</td>
+      <td>所发的 channel mask 已成功解析，已按照 mask 设置了当前的信道状态。</td>
    </tr>
    <tr>
       <td><b>Data rate ACK</b></td>
       <td>所请求的数据速率，终端无法识别，或者无法应用在当前信道中（不支持任何使能的信道)。命令被丢弃，终端状态不变。</td>
-	  <td>数据速率成功设置。</td>
+      <td>数据速率成功设置。</td>
    </tr>
    <tr>
       <td><b>Power ACK</b></td>
       <td>所请求的发射功率不能在终端上执行。命令被丢弃，终端状态不变。</td>
-	  <td>功率等级成功设置。</td>
+      <td>功率等级成功设置。</td>
    </tr>
 </table>
 

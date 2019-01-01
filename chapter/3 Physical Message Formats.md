@@ -49,7 +49,7 @@ PHDR，PHDR_CRC 及载荷 CRC 域都通过射频收发器加入。
 
 每个上行传输后终端都要开两个短的接收窗口。接收窗口开始时间的规定，是以传输结束时间为参考。
 
-![](Pictures/lorawan_ed_receive_slot_timing.png)
+![](/img/lorawan_ed_receive_slot_timing.png)
 
 图4.终端接收时隙的时序图
 

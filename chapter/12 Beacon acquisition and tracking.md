@@ -14,7 +14,7 @@ Class B 模式的设备也许会短暂性地无法接收信标(超出与网关�
 
 在 “beacon-less” 的情况下，单播、多播还有信标接收时隙都必须逐步地扩大接收窗口时间以容纳终端可能的时钟漂移。
 
-![](Pictures/beacon-less_temporary_operation.png)
+![](/img/beacon-less_temporary_operation.png)
 
 ### <a name="12.2">12.2 beacon-less 接收操作的延长</a>
 
