@@ -54,6 +54,8 @@
         * [6.2.5 Join-accept 消息](eBook/6 End-Device Activation.md#6.2.5)
     * [6.3 独立激活 ABP](eBook/6 End-Device Activation.md#6.3)
 
+* [第7章 重传退避](eBook/7 Retransmissions back-off Activation.md)
+	
 * [CLASS B – BEACON 信标](eBook/CLASS B - BEACON.md)
 
 * [第8章 Class B 介绍](eBook/8 Introduction to Class B.md)
