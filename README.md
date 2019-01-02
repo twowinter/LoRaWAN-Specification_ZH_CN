@@ -15,9 +15,9 @@
 
 ## 项目进展
 
-LoRaWAN_V1.0.2 的中文版本经过1年半时间断断续续的调整，现已优先发布。
+LoRaWAN_V1.0.2 的中文版本经过1年半时间断断续续的调整，现已优先发布，可[点此下载](https://github.com/twowinter/LoRaWAN-Specification_ZH_CN/releases)。
 
-其他版本待整理后，新建分支来跟进。大家可持续关注[github 仓库地址](https://github.com/twowinter/LoRaWAN-Specification_ZH_CN)。
+其他版本待新建分支来跟进。大家可持续关注[github 仓库地址](https://github.com/twowinter/LoRaWAN-Specification_ZH_CN)。
 
 ## 贡献者介绍
 
