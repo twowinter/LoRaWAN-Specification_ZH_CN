@@ -2,7 +2,7 @@
 
 ## **第2章 LoRaWAN Classes 类型介绍**
 
-LoRa 是由Semtech面向长距离、低功耗、低速率应用而开发的无线调制技术。本文档中，将 Class A 基础上实现了更多功能的设备称为“更高 class 终端”。
+LoRa 是由 Semtech 面向长距离、低功耗、低速率应用而开发的无线调制技术。本文档中，将 Class A 基础上实现了更多功能的设备称为“更高 class 终端”。
 
 ### <a name="2.1">2.1 LoRaWAN Classes</a>
 
