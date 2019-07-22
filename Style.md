@@ -2,6 +2,8 @@
 
 ## 文档格式
 
+文档格式主要参考 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
+
 - 中文中混杂英文词语和数字时，需要补充空格。
   // 这点没严格执行，有章节更新的话，会逐步完善这一块。
   > "本文档描述了 LoRaWAN 网络协议" // 前后都有汉字时在前后补充空格。
