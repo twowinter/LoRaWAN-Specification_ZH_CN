@@ -7,7 +7,7 @@
 
 《LoRaWAN-Specification》是 LoRa 联盟规范的核心协议，由于国内LoRa从业者数量众多，难免有不少伙伴需要中文译本，所以诞生了这个小项目。
 
-项目采用 gitbook 进行编写，地址在 [https://www.gitbook.com/book/twowinter/lorawan-specification_zh_cn](https://www.gitbook.com/book/twowinter/lorawan-specification_zh_cn)。
+项目采用 gitbook 进行编写，地址在 [https://twowinter.gitbooks.io/lorawan-specification_zh_cn/content/](https://twowinter.gitbooks.io/lorawan-specification_zh_cn/content/)。
 
 由于这是民间自发的翻译，一些地方翻译可能不够恰当。如果觉得协议的某处比较晦涩，请不要怀疑自己，大概率是翻译的问题。
 
